@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/explore_selector"
+        android:title="Utforsk"/>
+
+    <item
+        android:id="@+id/navigation_friscard"
+        android:icon="@drawable/friscard_selector"
+        android:title="Friskort"/>
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/map_selector"
+        android:title="Kart"/>
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile_selector"
+        android:title="Profil"/>
+
+
+</menu>
