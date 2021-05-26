@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="example">50sp</dimen>
+    <dimen name="bread">15sp</dimen>
     <dimen name="headline">30sp</dimen>
+    <dimen name="smallMargin">10dp</dimen>
+    <dimen name="medMargin">20dp</dimen>
 </resources>

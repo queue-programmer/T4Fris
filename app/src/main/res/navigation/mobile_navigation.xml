@@ -8,24 +8,24 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.t4fris.fragments.HomeFragment"
-        android:label="@string/title_explore"
+        android:label="@string/titleExplore"
         tools:layout="@layout/fragment_explore" />
 
     <fragment
         android:id="@+id/navigation_friscard"
         android:name="com.example.t4fris.fragments.FriscardFragment"
-        android:label="@string/title_friscard"
+        android:label="@string/titleFriscard"
         tools:layout="@layout/fragment_friscard" />
 
     <fragment
         android:id="@+id/navigation_map"
         android:name="com.example.t4fris.fragments.MapFragment"
-        android:label="@string/title_map"
+        android:label="@string/titleMap"
         tools:layout="@layout/fragment_map" />
 
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.example.t4fris.fragments.ProfileFragment"
-        android:label="@string/title_profile"
+        android:label="@string/titleProfile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

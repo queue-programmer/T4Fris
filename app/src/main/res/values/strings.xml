@@ -4,8 +4,17 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="titleExplore">Explore</string>
+    <string name="topBarText">utforsk</string>
     <string name="popularEx">POPULÆRE</string>
     <string name="viewedRecentlyEx">NYLIG SETT</string>
+    <string name="rollIce">ROLLED ICE CREAM</string>
+    <string name="milkshake">MYLKSHAKES</string>
+    <string name="coffee">KAFFE</string>
+
+    <string name="van">VANILJE</string>
+    <string name="choco">SJOKOLADE</string>
+    <string name="strawB">JORDBÆR</string>
+    <string name="blackB">SKOGSBÆR</string>
 
     <string name="titleFriscard">Friscard</string>
 
