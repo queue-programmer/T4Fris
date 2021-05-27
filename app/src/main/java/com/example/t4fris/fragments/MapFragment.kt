@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.t4fris.MainActivity
 import com.example.t4fris.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -28,6 +29,9 @@ class MapFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
+        (activity as MainActivity).topTextChange("kart")
+
     }
 
     override fun onCreateView(

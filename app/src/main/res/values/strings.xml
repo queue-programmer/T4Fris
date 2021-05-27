@@ -3,8 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="titleExplore">Explore</string>
-    <string name="topBarText">utforsk</string>
+    <string name="titleExplore">utforsk</string>
     <string name="popularEx">POPULÆRE</string>
     <string name="viewedRecentlyEx">NYLIG SETT</string>
     <string name="rollIce">ROLLED ICE CREAM</string>
@@ -18,9 +17,12 @@
 
     <string name="titleFriscard">Friscard</string>
 
-    <string name="titleMap">Map</string>
+    <string name="titleMap">kart</string>
+    <string name="address">ADRESSE</string>
+    <string name="open">ÅPNINGSTIDER</string>
+    <string name="contact">KONTAKT OSS</string>
 
-    <string name="titleProfile">Profile</string>
+    <string name="titleProfile">Profil</string>
     <string name="favoritePro">FAVORITTER</string>
     <string name="recieptsPro">KVITTERINGER</string>
     <string name="myAccountPro">MIN KONTO</string>
