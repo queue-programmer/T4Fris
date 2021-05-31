@@ -3,6 +3,7 @@
     package="com.example.t4fris">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<!--    <uses-permission android:name="com.google.android.things.permission.MANAGE_GNSS_DRIVERS" />-->
 
     <application
         android:allowBackup="true"

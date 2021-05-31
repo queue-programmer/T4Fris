@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.t4fris.MainActivity
 import com.example.t4fris.R
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -18,7 +20,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [MapFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class MapFragment : Fragment() {
+class MapFragment : Fragment(), OnMapReadyCallback {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -40,6 +42,9 @@ class MapFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_map, container, false)
+
+//        getMapAsync
+//        mapFragment.getMapAsync(this)
     }
 
     companion object {
@@ -48,7 +53,7 @@ class MapFragment : Fragment() {
          * this fragment using the provided parameters.
          *
          * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
+         *z @param param2 Parameter 2.
          * @return A new instance of fragment MapFragment.
          */
         // TODO: Rename and change types and number of parameters
@@ -60,5 +65,9 @@ class MapFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    override fun onMapReady(p0: GoogleMap) {
+        TODO("Not yet implemented")
     }
 }
