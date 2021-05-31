@@ -8,7 +8,7 @@
 
 
 
-//Options list
+<!--Options list-->
     <HorizontalScrollView
         android:id="@+id/list_of_items"
         android:layout_width="match_parent"
@@ -55,7 +55,7 @@
 
     </HorizontalScrollView>
 
-//Order list
+<!--OrderList-->
     <HorizontalScrollView
         android:id="@+id/order_list"
         android:layout_width="match_parent"
@@ -112,7 +112,7 @@
 
     </HorizontalScrollView>
 
-//List buttons
+<!--List buttons-->
     <TextView
         android:id="@+id/popular_button"
         android:layout_width="0dp"
@@ -142,7 +142,7 @@
         android:textStyle="bold"/>
 
 
-//Popular list
+<!--Popular list-->
     <ScrollView
         android:id="@+id/popular_recent_list"
         android:layout_width="match_parent"

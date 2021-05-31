@@ -2,10 +2,12 @@ package com.example.t4fris
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.t4fris.Repository.CartRepo
 import com.example.t4fris.cutomLogic.topBarLogic
 import com.example.t4fris.fragments.FriscardFragment
 import com.example.t4fris.fragments.HomeFragment
@@ -14,10 +16,15 @@ import com.example.t4fris.fragments.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationMenu
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var topBar: topBarLogic
+
+    lateinit var cartRepo: CartRepo
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -37,13 +44,14 @@ class MainActivity : AppCompatActivity() {
         topTextChange("utforsk")
 
         setOnClickListeners()
+
+        cartRepo = CartRepo()
     }
 
     fun setOnClickListeners(){
 
         topBar.cartButton.setOnClickListener{
             cartButtonLogic()
-
         }
         topBar.searchButton.setOnClickListener{
             searchButtonLogic()
@@ -52,10 +60,13 @@ class MainActivity : AppCompatActivity() {
             onBackPressed()
         }
 
+
     }
 
     fun cartButtonLogic(){
-        Toast.makeText(this, "Pressed the cart button!", Toast.LENGTH_SHORT).show()
+//        Toast.makeText(this, "Pressed the cart button!", Toast.LENGTH_SHORT).show()
+
+        printCart()
     }
 
     fun searchButtonLogic(){
@@ -64,5 +75,12 @@ class MainActivity : AppCompatActivity() {
 
     fun topTextChange(title: String ){
         topBar.headerTextView.text = title
+    }
+
+    fun printCart(){
+
+        CoroutineScope(Dispatchers.IO).launch {
+            Log.d("Debug", cartRepo.getCart().toString())
+        }
     }
 }
