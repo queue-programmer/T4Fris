@@ -1,7 +1,6 @@
 package com.example.t4fris.fragments
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +9,6 @@ import android.widget.Button
 import android.widget.Toast
 import com.example.t4fris.MainActivity
 import com.example.t4fris.R
-import com.example.t4fris.Repository.CartRepo
 import com.example.t4fris.cutomLogic.IcecreamData
 import kotlinx.android.synthetic.main.fragment_explore.view.*
 import kotlinx.coroutines.CoroutineScope
