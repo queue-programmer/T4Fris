@@ -3,14 +3,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.FriscardFragment">
 
-    <TextView
+    <ImageView
+        android:id="@+id/QRCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="heeeeelp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/bigMargin"
+        android:src="@drawable/fris_qr"/>
 
-        />
+    <LinearLayout
+        android:id="@+id/frisCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/bigMargin"
+        app:layout_constraintTop_toBottomOf="@id/QRCode">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cupon_icon1"
+                android:layout_width="@dimen/medIconSize"
+                android:layout_height="@dimen/medIconSize"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/friscard_cupon_selector"
+                android:layout_marginLeft="@dimen/smallMargin"/>
+            <ImageView
+                android:id="@+id/cupon_icon2"
+                android:layout_width="@dimen/medIconSize"
+                android:layout_height="@dimen/medIconSize"
+                android:src="@drawable/friscard_cupon_selector"
+                app:layout_constraintStart_toEndOf="@+id/cupon_icon1"
+                app:layout_constraintTop_toTopOf="@id/cupon_icon1"
+                android:layout_marginLeft="@dimen/smallMargin"/>
+            <ImageView
+                android:id="@+id/cupon_icon3"
+                android:layout_width="@dimen/medIconSize"
+                android:layout_height="@dimen/medIconSize"
+                android:src="@drawable/friscard_cupon_selector"
+                app:layout_constraintStart_toEndOf="@+id/cupon_icon2"
+                app:layout_constraintTop_toTopOf="@id/cupon_icon2"
+                android:layout_marginLeft="@dimen/smallMargin"/>
+            <ImageView
+                android:id="@+id/cupon_icon4"
+                android:layout_width="@dimen/medIconSize"
+                android:layout_height="@dimen/medIconSize"
+                android:src="@drawable/friscard_cupon_selector"
+                app:layout_constraintStart_toEndOf="@+id/cupon_icon3"
+                app:layout_constraintTop_toTopOf="@id/cupon_icon3"
+                android:layout_marginLeft="@dimen/smallMargin"/>
+            <ImageView
+                android:id="@+id/cupon_icon5"
+                android:layout_width="@dimen/medIconSize"
+                android:layout_height="@dimen/medIconSize"
+                android:src="@drawable/friscard_cupon_selector"
+                app:layout_constraintTop_toBottomOf="@+id/cupon_icon1"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="@dimen/smallMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+            <ImageView
+                android:id="@+id/cupon_icon6"
+                android:layout_width="@dimen/medIconSize"
+                android:layout_height="@dimen/medIconSize"
+                android:src="@drawable/friscard_cupon_selector"
+                app:layout_constraintTop_toTopOf="@id/cupon_icon5"
+                app:layout_constraintStart_toEndOf="@+id/cupon_icon5"
+                android:layout_marginLeft="@dimen/smallMargin"
+                />
+            <ImageView
+                android:id="@+id/cupon_icon7"
+                android:layout_width="@dimen/medIconSize"
+                android:layout_height="@dimen/medIconSize"
+                android:src="@drawable/friscard_cupon_selector"
+                app:layout_constraintTop_toTopOf="@id/cupon_icon6"
+                app:layout_constraintStart_toEndOf="@+id/cupon_icon6"
+                android:layout_marginLeft="@dimen/smallMargin"
+                />
+            <ImageView
+                android:id="@+id/cupon_icon8"
+                android:layout_width="@dimen/medIconSize"
+                android:layout_height="@dimen/medIconSize"
+                android:src="@drawable/friscard_cupon_selector"
+                app:layout_constraintTop_toTopOf="@id/cupon_icon7"
+                app:layout_constraintStart_toEndOf="@+id/cupon_icon7"
+                android:layout_marginLeft="@dimen/smallMargin"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/frisInfo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/frisCard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/bigMargin"
+        android:text="@string/infoFrisCard"
+        android:gravity="center_horizontal"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
