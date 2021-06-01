@@ -1,5 +1,6 @@
 package com.example.t4fris.fragments
 
+import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import com.example.t4fris.MainActivity
 import com.example.t4fris.R
 import com.example.t4fris.cutomLogic.IcecreamData
@@ -70,5 +72,12 @@ class HomeFragment : Fragment() {
             (activity as MainActivity).cartRepo.addToCart(icecream.name, icecream.price)
         }
         Toast.makeText((activity as MainActivity).applicationContext, "Added ${icecream.name} to cart", Toast.LENGTH_SHORT).show()
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    fun sendNotification(title: String, text: String){
+
+        (activity as MainActivity).sendNotification(title, text)
+
     }
 }

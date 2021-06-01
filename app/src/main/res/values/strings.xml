@@ -27,4 +27,6 @@
     <string name="recieptsPro">KVITTERINGER</string>
     <string name="myAccountPro">MIN KONTO</string>
     <string name="myPurchasesPro">MINE KJØP</string>
+    
+    <string name="notificationChannel">com.example.t4fris.blabla</string>
 </resources>
