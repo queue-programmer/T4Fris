@@ -26,6 +26,7 @@
         app:layout_constraintTop_toBottomOf="@id/QRCode">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frisCardContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
