@@ -6,19 +6,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.MapFragment">
 
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="300dp"
         android:layout_height="370dp"
         android:layout_margin="@dimen/bigMargin"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintBottom_toTopOf="@+id/scrollInfo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ScrollView
-        android:id="@+id/scrollView3"
+        android:id="@+id/scrollInfo"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_margin="@dimen/smallMargin"
@@ -29,7 +29,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="140dp"
-
             android:orientation="vertical">
 
             <TextView
@@ -56,14 +55,7 @@
                 android:textSize="@dimen/headline"
                 android:textStyle="bold"/>
 
-
         </LinearLayout>
-
     </ScrollView>
-
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

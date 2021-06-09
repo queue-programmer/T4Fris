@@ -14,6 +14,7 @@ import com.example.t4fris.Notifications.Notificatons
 import com.example.t4fris.Repository.CartRepo
 import com.example.t4fris.cutomLogic.topBarLogic
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.fragment_map.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var notificatons: Notificatons
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)  {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -84,7 +85,5 @@ class MainActivity : AppCompatActivity() {
     fun sendNotification(title: String, text: String){
 
         notificatons.sendNotif(this@MainActivity, title, text)
-
-
     }
 }

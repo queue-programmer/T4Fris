@@ -5,27 +5,32 @@ import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Transformations.map
 import com.example.t4fris.R
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.OnMapReadyCallback
-import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.*
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
 
-internal class MapLogic: AppCompatActivity(), OnMapReadyCallback {
+//internal class MapLogic: AppCompatActivity(), OnMapReadyCallback {
 
-    private lateinit var frisMap: GoogleMap
-    override fun onMapReady(p0: GoogleMap) {
-
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?){
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_map)
-
-        val mapFragment = supportFragmentManager
-            .findFragmentById(R.id.map) as SupportMapFragment
-        mapFragment.getMapAsync(this)
-        
-    }
-}
+//    private lateinit var frisMap: GoogleMap
+//
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        setContentView(R.layout.fragment_map)
+//
+//        val mapFragment = MapFragment.findFragmentById(R.id.map) as? SupportMapFragment
+//        mapFragment?.getMapAsync(this)
+//    }
+//
+//    override fun onMapReady(p0: GoogleMap) {
+//        val oslo = LatLng(59.9, 10.7)
+//        googleMap.addMarker(
+//            MarkerOptions()
+//                .position(oslo)
+//                .title("Marker is in Oslo")
+//        )
+//        googleMap.moveCamera(CameraUpdateFactory.newLatLng(oslo))
+//    }
+//}
 
 //internal class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 //
