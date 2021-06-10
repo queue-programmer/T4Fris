@@ -28,4 +28,9 @@
         android:name="com.example.t4fris.fragments.ProfileFragment"
         android:label="@string/titleProfile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.t4fris.fragments.CartFragment"
+        android:label="CartFragment"
+        tools:layout="@layout/fragment_cart"/>
 </navigation>

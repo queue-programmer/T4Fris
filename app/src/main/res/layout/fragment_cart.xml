@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/yourOrderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yourOrder"
+        android:textStyle="bold"
+        android:textColor="@color/fris_blue"
+        android:textSize="@dimen/headline"
+        android:layout_margin="@dimen/medMargin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/fetchText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locationFetch"
+        android:textColor="@color/fris_brown"
+        android:textSize="@dimen/bread"
+        android:layout_margin="@dimen/bigMargin"
+        app:layout_constraintEnd_toEndOf="@+id/cartLayout"
+        app:layout_constraintStart_toStartOf="@+id/cartLayout"
+        app:layout_constraintTop_toBottomOf="@+id/yourOrderText" />
+
+    <Button
+        android:id="@+id/whenFetch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/fris_darkpink"
+        android:text="@string/whenFetch"
+        android:textColor="@color/fris_white"
+        app:cornerRadius="@dimen/medCorner"
+        android:layout_margin="@dimen/bigMargin"
+        app:layout_constraintEnd_toEndOf="@+id/cartLayout"
+        app:layout_constraintStart_toStartOf="@+id/cartLayout"
+        app:layout_constraintTop_toBottomOf="@+id/fetchText" />
+
+    <TextView
+        android:id="@+id/productText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medMargin"
+        android:text="@string/products"
+        android:textSize="@dimen/bread"
+        android:textColor="@color/fris_brown"
+        app:layout_constraintEnd_toEndOf="@+id/whenFetch"
+        app:layout_constraintStart_toStartOf="@+id/whenFetch"
+        app:layout_constraintTop_toBottomOf="@+id/whenFetch" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/bigMargin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productText">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/sumText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medMargin"
+        android:text="@string/total"
+        android:textSize="@dimen/bread"
+        android:textColor="@color/fris_brown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartLayout"
+        app:layout_constraintEnd_toStartOf="@id/sumNumber"/>
+
+    <TextView
+        android:id="@+id/sumNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medMargin"
+        android:textSize="@dimen/bread"
+        android:textColor="@color/fris_brown"
+        app:layout_constraintStart_toEndOf="@id/sumText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cartLayout"/>
+
+    <TextView
+        android:id="@+id/addText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medMargin"
+        android:text="@string/addToOrder"
+        android:textSize="@dimen/bread"
+        android:textColor="@color/fris_darkpink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sumText"/>
+
+    <Button
+        android:id="@+id/payandsendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/payAndSend"
+        android:backgroundTint="@color/fris_darkpink"
+        android:layout_margin="@dimen/bigMargin"
+        app:cornerRadius="@dimen/medCorner"
+        app:layout_constraintTop_toBottomOf="@id/addText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

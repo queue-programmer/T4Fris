@@ -99,8 +99,6 @@
                 app:layout_constraintStart_toEndOf="@+id/cupon_icon7"
                 android:layout_marginLeft="@dimen/smallMargin"
                 />
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>

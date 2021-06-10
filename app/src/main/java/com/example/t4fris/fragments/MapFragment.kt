@@ -16,7 +16,6 @@ import com.google.android.gms.maps.model.MarkerOptions
 class MapFragment : Fragment(), OnMapReadyCallback {
 
     lateinit var googleMap: GoogleMap
-
     lateinit var mapFragment: SupportMapFragment
 
     lateinit var mapContainer: Fragment

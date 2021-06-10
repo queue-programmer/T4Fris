@@ -9,7 +9,6 @@ class FrisApp: Application() {
         lateinit var application: FrisApp
     }
 
-
     override fun onCreate() {
         super.onCreate()
 

@@ -6,28 +6,38 @@
     <string name="titleExplore">utforsk</string>
     <string name="popularEx">POPULÆRE</string>
     <string name="viewedRecentlyEx">NYLIG SETT</string>
-    <string name="rollIce">ROLLED ICE CREAM</string>
+    <string name="rollIce">ROLLED iCE CREAM</string>
     <string name="milkshake">MYLKSHAKES</string>
     <string name="coffee">KAFFE</string>
 
-    <string name="van">VANILJE</string>
+    <string name="van">VANiLJE</string>
     <string name="choco">SJOKOLADE</string>
     <string name="strawB">JORDBÆR</string>
     <string name="blackB">SKOGSBÆR</string>
 
     <string name="titleFriscard">Friscard</string>
-    <string name="infoFrisCard">For hver 7. iskrem du kjøper hos oss får du en valgfri rolled ice-cream gratis! PS. Du må være medlem for å benytte deg av friskortet og tilbudet.</string>
+    <string name="infoFrisCard">For hver 7. iskrem du kjøper hos oss får du en valgfri rolled ice-cream gratis!
+        PS. Du må være medlem for å benytte deg av friskortet og tilbudet.</string>
 
     <string name="titleMap">kart</string>
     <string name="address">ADRESSE</string>
-    <string name="open">ÅPNINGSTIDER</string>
+    <string name="open">ÅPNINGSTiDER</string>
     <string name="contact">KONTAKT OSS</string>
 
     <string name="titleProfile">Profil</string>
-    <string name="favoritePro">FAVORITTER</string>
-    <string name="recieptsPro">KVITTERINGER</string>
-    <string name="myAccountPro">MIN KONTO</string>
-    <string name="myPurchasesPro">MINE KJØP</string>
-    
+    <string name="favoritePro">FAVORiTTER</string>
+    <string name="recieptsPro">KViTTERiNGER</string>
+    <string name="myAccountPro">MiN KONTO</string>
+    <string name="myPurchasesPro">MiNE KJØP</string>
+
+    <string name="cart">handlekurv</string>
+    <string name="yourOrder">DiN BESTiLLiNG</string>
+    <string name="locationFetch">Hentes på Aker Brygge.</string>
+    <string name="addToOrder">Legg til mer i bestillingen din.</string>
+    <string name="whenFetch">Når vil du hente?</string>
+    <string name="payAndSend">Betal og send bestilling</string>
+    <string name="products">Produkter</string>
+    <string name="total">Sum</string>
+
     <string name="notificationChannel">com.example.t4fris.blabla</string>
 </resources>

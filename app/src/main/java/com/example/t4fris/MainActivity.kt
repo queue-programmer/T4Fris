@@ -66,8 +66,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun cartButtonLogic(){
-//        Toast.makeText(this, "Pressed the cart button!", Toast.LENGTH_SHORT).show()
         printCart()
+
+        findNavController(R.id.navHostFrag).navigate(R.id.cartFragment)
     }
     fun searchButtonLogic(){
         Toast.makeText(this, "Pressed the search button!", Toast.LENGTH_SHORT).show()

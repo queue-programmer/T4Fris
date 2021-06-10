@@ -15,13 +15,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-<!--    <FrameLayout-->
-<!--        android:id="@+id/fl_wrapper"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/conTop_bar"-->
-<!--        android:layout_above="@id/bottom_navigation"/>-->
-
     <fragment
         android:id="@+id/navHostFrag"
         android:layout_width="match_parent"
@@ -47,8 +40,8 @@
         app:backgroundTint="@color/fris_blue"
         app:itemIconTint="@color/fris_white"
         app:itemTextColor="@color/fris_white"
-        android:layout_marginEnd="20sp"
-        android:layout_marginStart="20sp"
+        android:layout_marginEnd="@dimen/medMargin"
+        android:layout_marginStart="@dimen/medMargin"
         app:menu="@menu/nav_menu"
         app:labelVisibilityMode="labeled" />
 

@@ -7,12 +7,10 @@
     tools:context=".fragments.HomeFragment">
 
 
-
-<!--Options list-->
     <HorizontalScrollView
         android:id="@+id/list_of_items"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="0dp"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -55,7 +53,6 @@
 
     </HorizontalScrollView>
 
-<!--OrderList-->
     <HorizontalScrollView
         android:id="@+id/order_list"
         android:layout_width="match_parent"
@@ -76,7 +73,7 @@
                 android:text="@string/van"
                 android:textColor="@color/fris_white"
                 app:backgroundTint="@color/fris_blue"
-                app:cornerRadius="20dp" />
+                app:cornerRadius="@dimen/medCorner" />
 
             <Button
                 android:id="@+id/strawB"
@@ -86,7 +83,7 @@
                 android:text="@string/strawB"
                 android:textColor="@color/fris_white"
                 app:backgroundTint="@color/fris_blue"
-                app:cornerRadius="20dp"/>
+                app:cornerRadius="@dimen/medCorner"/>
 
             <Button
                 android:id="@+id/choco"
@@ -96,7 +93,7 @@
                 android:text="@string/choco"
                 android:textColor="@color/fris_white"
                 app:backgroundTint="@color/fris_blue"
-                app:cornerRadius="20dp"/>
+                app:cornerRadius="@dimen/medCorner"/>
 
             <Button
                 android:id="@+id/blackB"
@@ -106,13 +103,12 @@
                 android:text="@string/blackB"
                 android:textColor="@color/fris_white"
                 app:backgroundTint="@color/fris_blue"
-                app:cornerRadius="20dp"/>
+                app:cornerRadius="@dimen/medCorner"/>
 
         </LinearLayout>
 
     </HorizontalScrollView>
 
-<!--List buttons-->
     <TextView
         android:id="@+id/popular_button"
         android:layout_width="0dp"
@@ -141,8 +137,6 @@
         android:textSize="@dimen/headline"
         android:textStyle="bold"/>
 
-
-<!--Popular list-->
     <ScrollView
         android:id="@+id/popular_recent_list"
         android:layout_width="match_parent"
@@ -167,7 +161,7 @@
                 android:text="First"
                 android:textColor="@color/fris_white"
                 app:backgroundTint="@color/fris_blue"
-                app:cornerRadius="40dp"/>
+                app:cornerRadius="@dimen/bigCorner"/>
 
             <Button
                 android:id="@+id/second"
@@ -177,7 +171,7 @@
                 android:text="second"
                 android:textColor="@color/fris_white"
                 app:backgroundTint="@color/fris_blue"
-                app:cornerRadius="40dp"/>
+                app:cornerRadius="@dimen/bigCorner"/>
 
             <Button
                 android:id="@+id/third"
@@ -187,7 +181,7 @@
                 android:text="Third"
                 android:textColor="@color/fris_white"
                 app:backgroundTint="@color/fris_blue"
-                app:cornerRadius="40dp"/>
+                app:cornerRadius="@dimen/bigCorner"/>
 
             <Button
                 android:id="@+id/fourth"
@@ -197,7 +191,7 @@
                 android:text="Fourth"
                 android:textColor="@color/fris_white"
                 app:backgroundTint="@color/fris_blue"
-                app:cornerRadius="40dp"/>
+                app:cornerRadius="@dimen/bigCorner"/>
 
         </LinearLayout>
 
